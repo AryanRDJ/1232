@@ -3,56 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Embedded Puzzle</title>
+    <title>Crosshare Puzzle</title>
     <style>
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-        }
-        .iframe-container {
-            width: 100%;
-            height: 90vh;
-            overflow: hidden;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-        }
-        .iframe-container iframe {
-            width: 100%;
             height: 100%;
-            border: none;
+            overflow: hidden;
         }
-        .congratulations {
-            display: none;
-            text-align: center;
-            margin-top: 20px;
-            font-size: 24px;
-            color: green;
+        iframe {
+            height: 100vh;
+            width: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <div class="iframe-container">
-        <iframe id="puzzleFrame" src="https://crosshare.org/embed/iCSiEjaXeaaQD50AHzrx/IS1XG2WJknVEIPJNX5abrxOenQ62" frameborder="0" allowfullscreen="true" allowtransparency="true" allow="clipboard-write *"></iframe>
-    </div>
-    <div class="congratulations" id="congratulationsMessage">
-        Congratulations! You solved the puzzle!
-    </div>
-
-    <script>
-        // Function to show congratulations message
-        function showCongratulationsMessage() {
-            document.getElementById("congratulationsMessage").style.display = "block";
-        }
-
-        // Assuming the puzzle sends a message when completed
-        window.addEventListener("message", function(event) {
-            // Check if the message indicates the puzzle is completed
-            if (event.data === "puzzleCompleted") {
-                // Show congratulations message
-                showCongratulationsMessage();
-            }
-        });
-    </script>
+    <iframe style="height: 90vh; width: 100%;" src="https://crosshare.org/embed/YIgKozVIgJoXnDYqVOzs/3HWK9yEU2GWY1RyrhQ4L0Ayiwhc2" frameborder="0" allowfullscreen="true" allowtransparency="true" allow="clipboard-write *"></iframe>
 </body>
 </html>
